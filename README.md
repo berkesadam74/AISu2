@@ -1,3 +1,3 @@
 # AISu2
 
-Algoritmy a štruktúra údajov
+Algoritmy a štruktúra údajov 2
