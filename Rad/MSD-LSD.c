@@ -45,7 +45,7 @@ int main(int argc, char **argv)
     for (int i = 0; i < MAX; i++)
         ini(&b[i]);
 
-    // Maximálna dľžka reťazca máme 3, takže budeme triediť tri krát, MSD triedi od zadu, LSD triedi od predu
+    // Maximálnu dľžku reťazca máme 3, takže budeme triediť tri krát, MSD triedi od zadu, LSD triedi od predu
     for (int i = 2; i >= 0; i--) // Toto je MSD, keby som triedil podla LSD tak for cyklus vyzerá takto => for(int i = 0; i < 3; i++)
     {
         printf("---------------------%d.znak---------------------\n", i + 1);
