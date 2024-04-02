@@ -1,4 +1,4 @@
-// Jednosmerny spajany zoznam s nárazníkom na konci a na začiatku
+// Jednosmerny spajany zoznam s nárazníkom na konci i na začiatku a so smerníkmy na koniec a začiatok
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -1,4 +1,4 @@
-// Jednosmerny spajany zoznam bez nárazníka
+// Jednosmerny spajany zoznam bez nárazníka bez smerníkov na koniec a začiatok
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
