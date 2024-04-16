@@ -1,4 +1,5 @@
 // Jednosmerny spajany zoznam bez nárazníka bez smerníkov na koniec a začiatok
+// Cyklicky spravený, koniec ukazuje na začiatok
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
