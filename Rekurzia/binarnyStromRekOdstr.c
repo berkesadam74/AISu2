@@ -1,3 +1,5 @@
+// Binárny strom na preklad z morzeovky do znakov + rekurzívne odstránenie
+// Treba načítať súbor morze.txt, ktorý obsahuje našu abecedu
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -85,15 +87,15 @@ void hladaj(UZOL *t, char mk[], char *lz){
         printf("Tento kod neexistuje\n");
     }
 }
-void destroy(UZOL **t){
-    if(*t == NULL)
+void destroy(UZOL **t){ // rekurzívne odstránenie stromu
+    if(*t == NULL)  // ak je už strom prázdny, tak skončí rekurziu
         return;
     printf("Som v uzle so znakom: %c\n", (*t)->s);
-    if((*t)->l != NULL)
+    if((*t)->l != NULL) // ak ľavý podstrom existuje, tak rekurzívne zavoláme destroy
         destroy(&(*t)->l);
-    if((*t)->p != NULL)
+    if((*t)->p != NULL) // ak pravý podstrom existuje, tak rekurzívne zavoláme destroy
         destroy(&(*t)->p);
-    printf("Odstranujem uzol so znakom: %c\n", (*t)->s);
-    free((void*)*t);
-    *t = NULL;
+    printf("Odstranujem uzol so znakom: %c\n", (*t)->s);    // vypíšeme, že práve ktorý uzol odstraňujeme
+    free((void*)*t);    // uvoľníme pamäť
+    *t = NULL;  // nastavíme ukazovateľ na NULL
 }
