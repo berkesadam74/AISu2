@@ -1,3 +1,4 @@
+// Lexografický strom - program na vkladanie a vyhladávanie slov v slovníku
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
