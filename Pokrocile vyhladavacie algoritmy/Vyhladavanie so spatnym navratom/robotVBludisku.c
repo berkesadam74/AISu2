@@ -79,6 +79,6 @@ void hladaj(int x, int y){  // funkcia na hľadanie cesty
         hladaj(x,y-1);  // rekurzívne volanie funkcie hladaj smerom do lava
     if(nasiel)  //  keď sme našli cestu tak sa vráti z rekurzie
         return;
-    bludisko[x][y] = ' ';   //
+    bludisko[x][y] = ' ';   // keď sa nevieme pohnúť tak sa vráti o jednu pozíciu a skúsi iné cesty
     vypis();
 }
