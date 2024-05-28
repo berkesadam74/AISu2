@@ -41,7 +41,7 @@ Contributions are welcome! Please fork the repository and create a pull request 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ## Authors
-- Adam Berkes - Initial work
+- Adam Berkes
 
 ## Acknowledgments
 - Thanks to the professors at University of Mateja Bela for providing valuable resources and inspiration.
