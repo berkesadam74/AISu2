@@ -70,7 +70,7 @@ int empty(RAD r)
 int full(RAD r)
 {
     // Rad je plný keď rozdiel medzi indexmi % MAX sa rovna 0, keďže toto je aj vtedy TRUE keď rad je prázdny, musíme skontrolovať či je ozaj prázdny náš rad
-    // napr. keď pointer kon = 20, zac = 5 ->  (20 - 10) % 10 = 0 -> ale zac != kon, čiže náš rad je plný
+    // napr. keď pointer kon = 20, zac = 10 ->  (20 - 10) % 10 = 0 -> ale zac != kon, čiže náš rad je plný
     return (r.kon - r.zac) % MAX == 0 && !empty(r);
 }
 void push(RAD *r, TYP x)
