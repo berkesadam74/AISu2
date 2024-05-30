@@ -69,8 +69,8 @@ int empty(RAD r)
 }
 int full(RAD r)
 {
-    // Rad je plný keď rozdiel medzi indexmi sa rovna MAX
-    return r.kon - r.zac == MAX;
+    // Rad je plný keď rozdiel medzi indexmi % MAX sa rovna 0, keďže toto je aj vtedy TRUE keď rad je prázdny, musíme skontrolovať či je ozaj prázdny náš rad
+    return (r.kon - r.zac) % MAX == 0 && !empty(r);
 }
 void push(RAD *r, TYP x)
 {
